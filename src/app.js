@@ -1,27 +1,17 @@
 import React from 'react';
 
-import Todo from './components/todo/todo';
-import Item from '../src/components/items';
-import Header from '../src/components/header';
-import Form from '../src/components/form'
+// State Only
+import ToDo from './components/todo/todo.js';
 
-import './components/todo/todo';
+// API Connected (Live Data)
+// import ToDo from './components/todo/todo-connected.js';
 
-function App(props) {
-  return (
-    <section>
-       <Header /> 
-      <div>
-        <Todo />
-      </div>
-      <div>
-        <Item />
-      </div>
-      <div>
-        <Form />
-      </div>
-    </section>
-  );
+function App() {
+    return (
+      <>
+        <ToDo />
+      </>
+    );
 }
 
 export default App;
