@@ -1,10 +1,17 @@
 import React from 'react';
-import { useEffect, useState, useReducer } from 'react';
 
-export default function App() {
-  return (
-    <>
-      <div>My App</div>
-    </>
-  );
+// State Only
+import ToDo from './components/todo/todo.js';
+
+// API Connected (Live Data)
+// import ToDo from './components/todo/todo-connected.js';
+
+function App() {
+    return (
+      <>
+        <ToDo />
+      </>
+    );
 }
+
+export default App;
